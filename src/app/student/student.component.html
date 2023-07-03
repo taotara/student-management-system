@@ -28,21 +28,21 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Jay</td>
-        <td>jay@mail.com</td>
-        <td>08035000000</td>
-        <td>Lagos</td>
+      <tr *ngFor="let data of allstudentdata">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.mobile}}</td>
+        <td>{{data.city}}</td>
         <td>
           <button
-            class="btn btn-info me-2" (click)="update()"
+            class="btn btn-info me-2" (click)="edit(data)"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
             Edit
           </button>
-          <button class="btn btn-danger">Delete</button>
+          <button class="btn btn-danger" (click)="deletestudent(data)">Delete</button>
         </td>
       </tr>
     </tbody>
@@ -135,8 +135,8 @@
           >
             Close
           </button>
-          <button type="button" class="btn btn-success" *ngIf="showAdd" (click)="addstudent()">Add</button>
-          <button type="button" class="btn btn-success" *ngIf="showUpdate">Update</button>
+          <button type="button" class="btn btn-success" *ngIf="showAdd" (click)="addstudent()" [disabled]="formValue.invalid">Add</button>
+          <button type="button" class="btn btn-success" *ngIf="showUpdate" (click)="update()" [disabled]="formValue.invalid">Update</button>
         </div>
       </div>
     </div>

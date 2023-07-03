@@ -2,15 +2,17 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Taofeek",
+      "email": "taofeek@taotara.com",
+      "mobile": "08035000000",
+      "city": "Lagos"
     },
     {
       "id": 2,
       "name": "Jack",
       "email": "jack@jack.com",
       "mobile": "08035000000",
-      "city": "Lagos"
+      "city": "Ilorin"
     },
     {
       "id": 3,
@@ -18,6 +20,13 @@
       "email": "abdullah@mail.com",
       "mobile": "125452215",
       "city": "Abuja"
+    },
+    {
+      "id": 4,
+      "name": "Lakunle",
+      "email": "kunle@ola.com",
+      "mobile": "25466485545",
+      "city": "Ibadan"
     }
   ],
   "comments": [

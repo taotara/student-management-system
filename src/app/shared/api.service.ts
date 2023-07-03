@@ -39,7 +39,7 @@ export class ApiService {
   // delete
 
   deletestudent(id: number) {
-    return this._http.delete<any>('http://localhost:3000/post/' + id)
+    return this._http.delete<any>('http://localhost:3000/posts/' + id)
       .pipe(map((res) => {
         return res;
       }));
