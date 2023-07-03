@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "Jack",
+      "email": "jack@jack.com",
+      "mobile": "08035000000",
+      "city": "Lagos"
+    },
+    {
+      "id": 3,
+      "name": "Abdullah",
+      "email": "abdullah@mail.com",
+      "mobile": "125452215",
+      "city": "Abuja"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "title": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
