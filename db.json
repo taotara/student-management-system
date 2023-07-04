@@ -29,6 +29,15 @@
       "city": "Ibadan"
     }
   ],
+  "signup": [
+    {
+      "name": "Taofeek",
+      "email": "taofeek@mail.com",
+      "mobile": 12345678901,
+      "password": "12345",
+      "id": 1
+    }
+  ],
   "comments": [
     {
       "id": 1,
